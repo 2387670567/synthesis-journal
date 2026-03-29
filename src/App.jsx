@@ -9,7 +9,15 @@ import {
 } from 'lucide-react';
 
 // --- Firebase Configuration ---
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+const firebaseConfig = {
+  apiKey: "AIzaSyCWyD_3ycoZpBD4ffeDpr0k47cpRPbg2bU",
+  authDomain: "synthesis-journal.firebaseapp.com",
+  projectId: "synthesis-journal",
+  storageBucket: "synthesis-journal.firebasestorage.app",
+  messagingSenderId: "213517431986",
+  appId: "1:213517431986:web:eac9c76f465b5a2842c5ab",
+  measurementId: "G-604S3QBJKR"
+};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
